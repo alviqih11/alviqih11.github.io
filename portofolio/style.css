@@ -1,0 +1,406 @@
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+
+}
+
+body {
+	
+	font-family: 'VT323', monospace;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #676FA3 !important;
+	
+	
+
+	
+}
+
+.Container {
+	background-color: #EEF2FF !important;
+	padding: 60px;
+	box-sizing: border-box;
+
+
+}
+
+/*navbar*/
+
+nav {
+	display: flex;
+	background-color: #EEF2FF !important;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+	height: 60px;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+
+}
+
+ul {
+	list-style: none;
+ 
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+	width: 40%;
+	justify-content: space-between;
+	margin-left: 10px;
+	line-height: 60px;
+	
+}
+
+nav ul li a {
+	text-decoration: none;
+	color:  #676FA3 !important;
+	padding: 18px 16px;
+	box-sizing: border-box;
+	font-size: 24px;
+}
+
+
+
+nav ul li .menu:hover {
+	background-color: #676FA3 ;
+	color: #EEF2FF !important;
+}
+
+/*jumbotron*/
+
+header {
+	width: 600px;
+	margin: auto;
+	
+
+	
+}
+.img {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 300px;
+	height: auto;
+}
+
+img	{
+	width: 100%;
+	max-width: 300px;
+
+}
+
+.resume {
+	text-align: center;
+	color: #676FA3 !important;
+
+}
+
+h1	{
+	font-size: 36px;
+	font-weight: 400;
+}
+
+p {
+	font-size: 24px;
+	margin: 10px 0;
+}
+
+button {
+
+	margin: 10px 0;
+	background-color: #676FA3;
+	color: #EEF2FF !important;
+	font-family: 'VT323', monospace;
+	font-size: 18px;
+	display: inline-block;
+	padding: 14px 16px;
+	border: none;
+	cursor: pointer;
+
+}
+
+button:hover {
+	background-color: #FF5959;
+}
+
+/*biodata*/
+
+.profil {
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-template-areas:
+						 'header header'
+						 'gambar biodata'
+						;
+	justify-items: center;
+	color: inherit;
+	padding:60px;
+	
+
+}
+
+.header {
+	grid-area: header;
+	font-size: 36px;
+	font-weight: 400;
+
+
+}
+
+.gambar {
+	grid-area: gambar;
+	justify-items: end;
+}
+
+.biodata {
+	grid-area: biodata;
+	margin-top: 10px;
+	font-size: 18px;
+	justify-items: start;
+
+}
+
+.judulbio {
+	font-size: 30px;
+}
+
+/*biografy*/
+
+.biografy {
+
+	padding:60px 40px;
+	box-sizing: border-box;
+	background-color: #EEF2FF !important ;
+	display: grid;
+}
+
+
+
+.headerbiografy {
+	text-align: center;
+	
+	
+}
+
+.biografy p {
+	font-size: 30px;
+	margin: 0 10px;
+	padding-top: 24px;
+}
+.education {
+	display: grid;
+	grid-template-areas: 
+						 'judul judul judul'
+						 
+						 ;
+	grid-template-columns:50% 25% 25% ;
+	margin: 0px 10px;
+	
+
+
+}
+
+
+.judul {
+	font-size: 25px;
+	background-color: #676FA3 !important;
+	color: white;
+	border: 1px solid #eee;
+	padding: 10px;
+
+}
+
+.sd {
+
+	font-size: 20px;
+	background-color: white;
+	color:#676FA3 !important ;
+	border: none;
+	padding: 10px;
+}
+
+.smp {
+
+	font-size: 20px;
+	background-color: #eee;
+	color:#676FA3 !important ;
+	border: none;
+	padding: 10px;
+
+}
+
+.sma {
+
+	font-size: 20px;
+	background-color: white;
+	color:#676FA3 !important ;
+	border: none;
+	padding: 10px;
+
+}
+
+.sd a {
+	padding: 10px;
+	text-decoration: none;
+	background-color:  #676FA3;
+	color: white;
+	box-sizing: border-box;
+}
+
+.sd a:hover {
+	background-color: #FF5959;
+}
+
+/*skill*/
+
+.skill {
+	padding:60px;
+
+}
+
+.skill ul li {
+	font-size: 25px;
+}
+
+
+.skill header {
+	font-size: 36px;
+	font-weight: 400px;
+	text-align: center;
+}
+
+.tingkatan {
+	padding: 10px 30px;
+	background-color:  #FF5959;
+	font-size: 20px;
+	
+}
+
+
+
+.html a, .css a, .php a, .javascript a, .bootsrap a {
+	color: white;
+	float: right;
+	text-decoration: none;
+	cursor: auto;
+}
+
+
+.html {
+	width: 80%;
+	background-color: rgb(76, 175, 80);
+	color: white;
+}
+
+.css {
+	width: 80%;
+	background-color: #FF5959;
+	color: white;
+}
+
+.javascript {
+	width: 30%;
+	background-color: #C9F20C;
+	color: white;
+}
+
+.php {
+	width: 50%;
+	background-color: #676FA3;
+	color: white;
+
+}
+
+.bootsrap {
+	width: 70%;
+	background-color: #16DB93;
+	color: white;
+}
+
+/*social media*/
+
+.socialmedia {
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	background-color:  #EEF2FF  ;
+	padding:60px;
+
+	
+}
+
+
+.socialaccount h1 {
+	font-size: 36px;
+	font-weight: 400px;
+	text-align: center;
+	
+}
+
+.socialaccount a {
+	
+	padding: 12px;
+}
+
+.socialaccount a i {
+	font-size: 2.5em;
+	color: #676FA3;
+
+}
+
+.donate {
+
+	width: 100px;
+}
+
+.donate h1 {
+	font-size: 36px;
+	font-weight: 400px;
+	text-align: center;
+}
+
+.donate a {
+	margin: 30px;
+}
+
+.donate a i {
+	font-size: 2.5em;
+	color: #676FA3 ;
+
+	
+}
+
+/*footer*/
+
+footer {
+
+	padding: 10px;
+	background-color: #676FA3 ;
+}
+
+footer p {
+	color: white;
+	text-align: center;
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
